@@ -2,7 +2,7 @@ import unittest
 
 
 from scripts.myfunc import (
-    sign, lst2num, num2lst,
+    sign, lst2num, num2lst, sum_squared
 )
 
 
@@ -31,3 +31,11 @@ class TestMyFunc(unittest.TestCase):
         ]
         for test_input, test_output in test_data:
             self.assertEqual(lst2num(test_input), test_output)
+
+    def test_sum_squared(self):
+        test_data = [
+            ([3, 4], 25),
+            ([-4], 16),            
+        ]
+        for test_input, test_output in test_data:
+            self.assertEqual(sum_squared(test_input), test_output)

@@ -38,3 +38,23 @@ def list_same_digit(n):
     ------
     digits (list of int): combination of digits """
     pass
+
+
+def sum_squared(x):
+    """ Return the sum of the squared elements
+    
+    Parameters
+    ----------
+    x (list): List of numbers
+
+    Return
+    ------
+    ss (float): sum of the squared """    
+    
+    ss = sum(map(lambda i : i * i, x))
+    # ss = sum([i**2 for i in x])
+    return ss
+    
+    
+    
+    
